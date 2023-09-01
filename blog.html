@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="collapse bg-base-200 my-10 px-10">
+        <input type="radio" name="my-accordion-1" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+            Discuss the scope of var, let, and const
+        </div>
+        <div class="collapse-content">
+            <p class="text-justify">In JavaScript, var, let, and const are ways to create variables. The key differences lie in their scope
+                and mutability. var has broader scope, potentially causing issues, and is hoisted with its declaration
+                but not its assignment. It can be reassigned. let and const are block-scoped, meaning they're limited to
+                where they're defined, and they're hoisted but not usable until declared. let can be reassigned, while
+                const cannot be reassigned after its initial value is assigned, although the content of objects and
+                arrays declared with const can still be modified. To keep code clean, it's advisable to prefer let for
+                variables that might change and const for variables that should remain constant. Using var is generally
+                discouraged due to its potential for unexpected behavior.</p>
+        </div>
+    </div>
+    <div class="collapse bg-base-200 my-10 px-10">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title text-xl font-medium">
+            Tell us the use cases of null and undefined
+        </div>
+        <div class="collapse-content">
+            <p class="text-justify">Here's a concise paragraph explaining the use cases of null and undefined in JavaScript:
+
+                In JavaScript, null and undefined are both used to represent the absence or lack of a value, but they
+                have distinct purposes. undefined is automatically assigned to variables that are declared but not
+                initialized, returned by functions with no explicit return value, and indicates missing object
+                properties or function arguments. It's often used to signify unintentional absence. On the other hand,
+                null is deliberately assigned to indicate an intentional absence of value or to clear a variable's
+                content. It serves as a placeholder when you want to represent an empty state. Understanding their
+                differences helps in effectively managing missing or empty data in your code.</p>
+        </div>
+    </div>
+    <div class="collapse bg-base-200 my-10 px-10">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title text-xl font-medium">
+            What do you mean by REST API?
+        </div>
+        <div class="collapse-content">
+            <p class="text-justify">A REST API, which stands for "Representational State Transfer Application Programming Interface," is a
+                framework for designing and creating web services that facilitate communication between different
+                software applications over the internet. REST APIs are employed to enable interactions between
+                client-side applications, like web or mobile apps, and server-side resources such as databases or
+                services. They adhere to a set of principles, including being stateless, resource-centric, and utilizing
+                standard HTTP methods like GET, POST, PUT, and DELETE to manipulate resources. By following a uniform
+                interface, REST APIs provide a separation between client and server concerns, allowing for more modular
+                development. These APIs commonly use formats like JSON or XML to transfer data and are known for their
+                simplicity, scalability, and widespread adoption in various programming environments.</p>
+        </div>
+    </div>
+</body>
+
+</html>
