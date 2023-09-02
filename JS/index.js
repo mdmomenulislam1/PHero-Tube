@@ -35,7 +35,7 @@ const handleBtn = async (categoryId) => {
     videoCard.innerHTML = `
         <div class="card bg-base-100 shadow-xl">
             <figure class="relative"><img src="${video.thumbnail}" alt="" class="rounded-lg h-[250px] w-full" /> 
-           ${video.others.posted_date > 0 ? '<p class="absolute bg-black text-white font-bold rounded-lg p-2 right-2 bottom-2">' + time1 + '<p/>' : ''} 
+           ${video.others.posted_date > 0 ? '<p class="absolute bg-black text-white font-bold rounded-lg p-2 right-1 bottom-1">' + time1 + '<p/>' : ''} 
             </figure>
             <div class="p-4 flex gap-4 justify-start ">
               <div class="">
@@ -78,11 +78,12 @@ const sortBtn = async () => {
     const videoCard = document.createElement('div');
     const hours = Math.floor(number.others.posted_date / 3600);
     const minutes = Math.floor((number.others.posted_date % 3600) / 60);
-    const time1 = hours + "Hr " + minutes + "Min " + "ago";
+    const seconds = Math.floor((number.others.posted_date % 60) );
+    const time1 = hours + "Hr " + minutes + "Min " + seconds+"Sec "+ "ago";
     videoCard.innerHTML = `
         <div class="card bg-base-100 shadow-xl">
             <figure class="relative"><img src="${number.thumbnail}" alt="" class="rounded-lg h-[250px] w-full" /> 
-           ${number.others.posted_date > 0 ? '<p class="absolute bg-black text-white font-bold rounded-lg p-2 right-2 bottom-2">' + time1 + '<p/>' : ''} 
+           ${number.others.posted_date > 0 ? '<p class="absolute bg-black text-white font-bold rounded-lg p-2 right-1 bottom-1">' + time1 + '<p/>' : ''} 
             </figure>
             <div class="p-4 flex gap-4 justify-start ">
               <div class="">
