@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,17 +7,15 @@
   <link rel="shortcut icon" href="/Images/Logo.png" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://kit.fontawesome.com/368b45373e.js" crossorigin="anonymous"></script>
 </head>
-
 <body class="px-10">
   <header class="py-10">
     <div class="navbar bg-base-100">
       <div class="navbar-start">
         <img src="/Images/Logo.png" alt="">
       </div>
-      <div  class="navbar-center hidden lg:flex">
-        <a onclick="sortBtn()" class="btn">Sort by view</a>
+      <div  class="navbar-center lg:flex">
+        <a id="sort-button" onclick="sortBtn()" class="btn">Sort by view</a>
       </div>
       <div class="navbar-end">
         <a href="/blog.html" class="btn bg-red-600 text-white">Blog</a>
@@ -26,47 +23,27 @@
     </div>
     <hr class="mt-10">
   </header>
+
   <main>
     <div id="Btn-container" class="text-center">
 
     </div>
-    <section>
-      <div id="videos-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:gap-10 mt-10">
-        <!-- <div>
-          <div class="card bg-base-100 shadow-xl">
-            <figure><img src="/Images/Icon.png" alt="Shoes" /></figure>
-            <div class="p-8 flex gap-5 justify-start ">
-              <div class="">
-                <img src="/Images/icon.png" alt="" class="bg-white b-3 rounded-full">
-              </div>
-              <div class="">
-                <h2 class="card-title">
-                  Shoes! Lorem ipsum dolor sit.
-                  
-                </h2>
-                <p>If a dofghi <span class="badge badge-secondary">NEW</span></p>
-                <p> does he choose?</p>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
+    <section>      
+      <div id="videos-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:gap-10 mt-10 mb-10">
       </div>
     </section>
+
     <!-- //Empty Data -->
     <div id="empty-data" class="text-center m-20 hidden">
-      
-        <img src="/Images/Icon.png" alt="" class="pl-80 m-16 ml-60">
-    
-      
+        <img src="/Images/Icon.png" alt="" class="pl-80 m-16 ml-60">     
       <p class="text-4xl font-extrabold">Oops!! Sorry,<br>There is no content here</p>
     </div>
+
+
   </main>
-  <footer class="">
+  <footer>
 
   </footer>
-  <script src="JS/index.js">
-  </script>
+  <script src="JS/index.js"></script>
 </body>
-
 </html>
